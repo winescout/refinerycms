@@ -51,9 +51,9 @@ module Refinery
         end
       end
 
-      initializer "refinery.will_paginate" do
-        WillPaginate.per_page = 20
-      end
+#      initializer "refinery.will_paginate" do
+#        WillPaginate.per_page = 20
+#      end
 
       initializer "register refinery_core plugin", :after => :set_routes_reloader do |app|
         Refinery::Plugin.register do |plugin|
